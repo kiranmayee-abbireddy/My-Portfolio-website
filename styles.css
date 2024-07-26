@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 3;
+    padding: 0;
     color: #ffffff;
     background-color: #000000; /* Black background */
     padding-bottom: 2.5rem; /* Add padding to avoid content being hidden behind footer */
