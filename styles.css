@@ -22,13 +22,14 @@ a:hover {
 header {
     background: #000000; /* Black background */
     color: #ffffff;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: auto; 
 }
 
 nav ul {
@@ -40,14 +41,14 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1.5rem;
+    margin: 0 1rem;
 }
 
 nav ul li a {
     color: #ffffff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.75rem;
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 20px; /* Capsule shape */
 }
@@ -59,7 +60,7 @@ nav ul li a:hover {
 
 /* Main Section Styles */
 main {
-    padding: 6rem 2rem 2rem;
+    padding: 5rem 2rem 2rem;
 }
 
 /* Hero Section */
