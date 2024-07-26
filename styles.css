@@ -35,7 +35,7 @@ header {
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 0.5;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@ nav ul li a:hover {
 
 /* Main Section Styles */
 main {
-    padding: 6rem 2rem 2rem;
+    padding: 4rem 2rem 2rem;
 }
 
 /* Hero Section */
