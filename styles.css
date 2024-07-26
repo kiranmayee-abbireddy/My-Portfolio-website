@@ -1,0 +1,343 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #000000; /* Black background */
+    padding-bottom: 2.5rem; /* Add padding to avoid content being hidden behind footer */
+}
+
+a {
+    color: #ff007f; /* Neon pink */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Header Styles */
+header {
+    background: #000000; /* Black background */
+    color: #ffffff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 20px; /* Capsule shape */
+}
+
+nav ul li a:hover {
+    background-color: #ff007f; /* Neon pink background */
+    color: #ffffff; /* White text */
+}
+
+/* Main Section Styles */
+main {
+    padding: 6rem 2rem 2rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #cccccc;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #ff007f; /* Neon pink */
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.btn:hover {
+    background-color: #e6007a; /* Slightly darker neon pink */
+}
+
+.btn span {
+    color: #ffffff; /* White text */
+}
+
+/* Projects Section (Index Page) */
+#projects-preview {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.project {
+    background: #2c2c2c;
+    padding: 1.5rem;
+    border: 1px solid #3d3d3d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    min-width: 280px;
+    max-width: calc(50% - 1rem);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff; /* White */
+}
+
+.project p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #cccccc;
+}
+
+.project a {
+    color: #ffffff; /* White text for the "View Project" link */
+    font-weight: bold;
+}
+
+.project-details {
+    display: flex;
+    gap: 10px;
+}
+
+.project-details > div {
+    flex: 1;
+}
+
+/* About Page Skills */
+.skills,
+.certifications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.skill,
+.certification {
+    background: #2c2c2c;
+    padding: 1rem;
+    border: 1px solid #3d3d3d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(33% - 1rem);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover,
+.certification:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.skill h3,
+.certification h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #ff007f; /* Neon pink */
+}
+
+.skill p,
+.certification p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+/* Internships Page */
+.internships {
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.internship {
+    background: #2c2c2c;
+    padding: 1.5rem;
+    border: 1px solid #3d3d3d;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.internship:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.internship h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ff007f; /* Neon pink */
+}
+
+.internship p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.internship a {
+    color: #ff007f; /* Neon pink */
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    padding: 2rem;
+    border: 1px solid #3d3d3d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #3d3d3d;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    background: #2c2c2c;
+    color: #ffffff;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #ff007f; /* Neon pink */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e6007a; /* Slightly darker neon pink */
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(45deg, #ff007f, #e6007a); /* Neon pink gradient */
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem; /* Adjusted padding */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    height: 2.5rem; /* Adjusted height */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .skills,
+    .certifications {
+        flex-direction: column;
+    }
+    
+    .skill,
+    .certification {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-form {
+        padding: 1rem;
+    }
+}
